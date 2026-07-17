@@ -1,0 +1,43 @@
+{
+  "namespace": "mnv-norm",
+  "description": "Normalization area of the Minimum Necessary Value (MNV) layered taxonomy. Represents the canonical label and its qualified semantic correspondence to a source taxonomy. Note: the source-label element required alongside canonical-label, source-taxonomy and equivalence-type is institution-specific free text (e.g., INCIBE-CERT's 'Compromiso de la informacion') and is therefore not represented as an enumerated value here; it is applied as a free-text local tag directly on the event.",
+  "version": 1,
+  "predicates": [
+    {"value": "canonical-label", "expanded": "Canonical Label"},
+    {"value": "source-taxonomy", "expanded": "Source Taxonomy"},
+    {"value": "equivalence-type", "expanded": "Equivalence Type"}
+  ],
+  "values": [
+    {
+      "predicate": "canonical-label",
+      "entry": [
+        {"value": "ransomware", "expanded": "Ransomware"},
+        {"value": "denial-of-service", "expanded": "Denial of Service (DoS/DDoS)"},
+        {"value": "data-exposure", "expanded": "Data Exposure / Exfiltration"},
+        {"value": "phishing", "expanded": "Phishing"},
+        {"value": "exploitation-of-vulnerability", "expanded": "Exploitation of Vulnerability"}
+      ]
+    },
+    {
+      "predicate": "source-taxonomy",
+      "entry": [
+        {"value": "RSIT", "expanded": "ENISA Reference Security Incident Taxonomy"},
+        {"value": "INCIBE-CERT", "expanded": "INCIBE-CERT (Spain)"},
+        {"value": "CERT-PT", "expanded": "CERT.PT (Portugal)"},
+        {"value": "CERT-AT", "expanded": "CERT.at (Austria)"},
+        {"value": "CISA", "expanded": "CISA Federal Incident Notification Guidelines (USA)"},
+        {"value": "VOUND-HR", "expanded": "Croatian VOUND Taxonomy"},
+        {"value": "other", "expanded": "Other"}
+      ]
+    },
+    {
+      "predicate": "equivalence-type",
+      "entry": [
+        {"value": "exact-match", "expanded": "Exact Match"},
+        {"value": "narrower-than", "expanded": "Narrower Than Source Term"},
+        {"value": "broader-than", "expanded": "Broader Than Source Term"},
+        {"value": "related-match", "expanded": "Related Match"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "namespace": "mnv-context",
+  "description": "Complementary descriptive area of the Minimum Necessary Value (MNV) layered taxonomy, aligned with Fig. 1: attack vector, functional impact, information impact, sector affected, phase of attack, and recoverability.",
+  "version": 1,
+  "predicates": [
+    {"value": "attack-vector", "expanded": "Attack Vector"},
+    {"value": "functional-impact", "expanded": "Functional Impact"},
+    {"value": "information-impact", "expanded": "Information Impact"},
+    {"value": "sector-affected", "expanded": "Sector Affected"},
+    {"value": "phase-of-attack", "expanded": "Phase of Attack"},
+    {"value": "recoverability", "expanded": "Recoverability"}
+  ],
+  "values": [
+    {
+      "predicate": "attack-vector",
+      "entry": [
+        {"value": "phishing-email", "expanded": "Phishing Email"},
+        {"value": "exploit-public-facing-application", "expanded": "Exploit of Public-Facing Application"},
+        {"value": "remote-desktop-protocol", "expanded": "Remote Desktop Protocol (RDP)"},
+        {"value": "supply-chain-compromise", "expanded": "Supply Chain Compromise"},
+        {"value": "valid-accounts", "expanded": "Valid Accounts Compromised"},
+        {"value": "removable-media", "expanded": "Removable Media"},
+        {"value": "network-flood", "expanded": "Network Flood"},
+        {"value": "unsecured-cloud-storage", "expanded": "Unsecured Cloud Storage"},
+        {"value": "unknown", "expanded": "Unknown"}
+      ]
+    },
+    {
+      "predicate": "functional-impact",
+      "entry": [
+        {"value": "no-impact", "expanded": "No Functional Impact"},
+        {"value": "service-degradation", "expanded": "Service Degradation"},
+        {"value": "service-unavailability", "expanded": "Service Unavailability"},
+        {"value": "complete-loss-of-service", "expanded": "Complete Loss of Service"}
+      ]
+    },
+    {
+      "predicate": "information-impact",
+      "entry": [
+        {"value": "none", "expanded": "None"},
+        {"value": "suspected-data-loss", "expanded": "Suspected but Not Confirmed Data Loss"},
+        {"value": "confirmed-integrity-loss", "expanded": "Confirmed Loss of Integrity"},
+        {"value": "confirmed-confidentiality-loss", "expanded": "Confirmed Loss of Confidentiality"},
+        {"value": "confirmed-data-exfiltration", "expanded": "Confirmed Data Exfiltration"}
+      ]
+    },
+    {
+      "predicate": "sector-affected",
+      "entry": [
+        {"value": "healthcare", "expanded": "Healthcare"},
+        {"value": "finance", "expanded": "Finance"},
+        {"value": "government", "expanded": "Government"},
+        {"value": "education", "expanded": "Education"},
+        {"value": "energy-utilities", "expanded": "Energy and Utilities"},
+        {"value": "retail", "expanded": "Retail"},
+        {"value": "technology", "expanded": "Technology"},
+        {"value": "telecommunications", "expanded": "Telecommunications"}
+      ]
+    },
+    {
+      "predicate": "phase-of-attack",
+      "entry": [
+        {"value": "reconnaissance", "expanded": "Reconnaissance"},
+        {"value": "initial-access", "expanded": "Initial Access"},
+        {"value": "execution-and-persistence", "expanded": "Execution and Persistence"},
+        {"value": "impact", "expanded": "Impact"},
+        {"value": "recovery", "expanded": "Recovery"}
+      ]
+    },
+    {
+      "predicate": "recoverability",
+      "entry": [
+        {"value": "automatic-recovery", "expanded": "Automatic Recovery"},
+        {"value": "manual-intervention", "expanded": "Manual Intervention Required"},
+        {"value": "extended-recovery-required", "expanded": "Extended Recovery Required"},
+        {"value": "not-recoverable", "expanded": "Not Recoverable"}
+      ]
+    }
+  ]
+}

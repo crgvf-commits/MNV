@@ -1,0 +1,34 @@
+{
+  "namespace": "mnv-core",
+  "description": "Core classificatory area of the Minimum Necessary Value (MNV) layered taxonomy. Represents the stable, RSIT-aligned incident-class backbone and the confidence level of the classification.",
+  "version": 1,
+  "predicates": [
+    {"value": "core-class", "expanded": "Core Incident Class"},
+    {"value": "confidence-level", "expanded": "Confidence Level"}
+  ],
+  "values": [
+    {
+      "predicate": "core-class",
+      "entry": [
+        {"value": "malicious-code", "expanded": "Malicious Code"},
+        {"value": "intrusion-attempts", "expanded": "Intrusion Attempts"},
+        {"value": "intrusions", "expanded": "Intrusions"},
+        {"value": "availability", "expanded": "Availability"},
+        {"value": "information-gathering", "expanded": "Information Gathering"},
+        {"value": "fraud", "expanded": "Fraud"},
+        {"value": "abusive-content", "expanded": "Abusive Content"},
+        {"value": "vulnerability", "expanded": "Vulnerability"},
+        {"value": "information-content-security", "expanded": "Information Content Security (RSIT lineage, omitted from Fig. 1 for diagram clarity)"}
+      ]
+    },
+    {
+      "predicate": "confidence-level",
+      "entry": [
+        {"value": "low", "expanded": "Low"},
+        {"value": "medium", "expanded": "Medium"},
+        {"value": "high", "expanded": "High"},
+        {"value": "confirmed", "expanded": "Confirmed"}
+      ]
+    }
+  ]
+}
