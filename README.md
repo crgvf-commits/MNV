@@ -42,8 +42,57 @@ Class definitions and incident semantics are inherited from the referenced
 classificatory vocabulary rather than duplicated as separate machine-tag
 predicates.
 
+
 Example:
 
 ```text
 mnv-core:core-class="malicious-code"
 mnv-core:confidence-level="high"
+```
+
+## Layer 2: Semantic Normalization
+
+`mnv-norm.json` defines the semantic correspondence between
+canonical concepts and source taxonomies.
+
+The namespace contains:
+
+- canonical labels;
+- source taxonomy identifiers;
+- qualified semantic relationships.
+
+Supported relationships include exact-match, narrower-than,
+broader-than, and related-match.
+
+Source labels are maintained as local free-text tags because
+they may vary across institutions.
+
+Example:
+
+```text
+mnv-norm:canonical-label="ransomware"
+mnv-norm:source-taxonomy="RSIT"
+mnv-norm:equivalence-type="narrower-than"
+```
+
+## Layer 3: Complementary Operational Context
+
+`mnv-context.json` provides additional operational attributes
+without modifying the core incident classification.
+
+The namespace contains:
+
+- attack vector;
+- functional impact;
+- information impact;
+- affected sector;
+- phase of attack;
+- recoverability.
+
+Example:
+
+```text
+mnv-context:attack-vector="phishing-email"
+mnv-context:functional-impact="service-degradation"
+mnv-context:sector-affected="government"
+```
